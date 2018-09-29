@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="TestNavigation.Views.CreateNewUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:mefed="http:\\www.codeplex.com\MEFedMVVM"
+			 mefed:ViewModelLocator.NonSharedViewModel="CreateUserViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Background="White">
+    <Grid>
+       <Grid.RowDefinitions>
+       	<RowDefinition/>
+		<RowDefinition/>
+		<RowDefinition Height="*"/>   
+	   </Grid.RowDefinitions>
+	   <Grid.ColumnDefinitions>
+	   	<ColumnDefinition Width="Auto"/>
+		<ColumnDefinition Width="*"/>
+	   </Grid.ColumnDefinitions>
+	   
+	   <TextBlock Text="Enter Name" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0"/>
+		<TextBox Text="{Binding Profile.Name, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" MinWidth="100" Margin="5,0"/>
+	   
+	   <TextBlock Grid.Row="1" Text="Enter Surname" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0"/>
+		<TextBox Grid.Row="1" Text="{Binding Profile.Surname, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" MinWidth="100" Margin="5,0"/>
+	   
+	   <TextBlock Grid.Row="2" Text="Enter Gender" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0"/>
+		<ComboBox Grid.Row="2" ItemsSource="{Binding Genders}" SelectedItem="{Binding Profile.Gender, Mode=TwoWay}"  HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" MinWidth="100" Margin="5,0"/>
+	   
+    </Grid>
+</UserControl>

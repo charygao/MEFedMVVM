@@ -1,0 +1,85 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="1909F45C-9C63-40B7-87A9-C68E78E8D501/d:ViewModelLocator/f:ExportViewModel.cs/l:..?..?MEFedMVVM?ViewModelLocator?ExportViewModel.cs" caret="591" fromTop="17" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:Views/f:UsersScreen.xaml" caret="351" fromTop="5" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/f:MainWindow.xaml" caret="1994" fromTop="11" />
+      <File id="1909F45C-9C63-40B7-87A9-C68E78E8D501/d:Common/f:DelegateCommand.cs/l:..?..?MEFedMVVM?Common?DelegateCommand.cs" caret="568" fromTop="0" />
+      <File id="D9E10C34-18F5-41B4-94B4-62B68A392B9E/f:DataValidationDelegateCommand.cs/l:..?MEFedMVVM.ValidationsExtensions?DataValidationDelegateCommand.cs" caret="989" fromTop="7" />
+      <File id="FBDAEEAA-CC5E-4A84-8D37-07DFEB7F396D/f:DataValidationDelegateCommand.cs" caret="1143" fromTop="16" />
+      <File id="CD6AA417-51A1-469B-934E-D1FDD7C6A5B1/d:Common/f:DelegateCommand.cs" caret="2509" fromTop="4" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:Views/f:AddNewUser.xaml" caret="2760" fromTop="26" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:SelectedUserViewModel.cs" caret="1150" fromTop="23" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/f:MediatorMessages.cs" caret="248" fromTop="10" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:UsersViewModel.cs" caret="2225" fromTop="13" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="621" fromTop="14" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:Services/d:Models/f:User.cs" caret="401" fromTop="17" />
+      <File id="D9E10C34-18F5-41B4-94B4-62B68A392B9E/f:DataValidationBase.cs/l:..?MEFedMVVM.ValidationsExtensions?DataValidationBase.cs" caret="644" fromTop="19" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:MainViewModel.cs" caret="388" fromTop="14" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:AutoStabberBase.cs" caret="1072" fromTop="34" />
+      <File id="BA759DB0-4B83-4177-BD32-66019B94C2FA/f:TestViewModelTest.cs" caret="930" fromTop="9" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:MoqAutoStabber.cs" caret="250" fromTop="13" />
+      <File id="FBDAEEAA-CC5E-4A84-8D37-07DFEB7F396D/f:DataValidationHandler.cs" caret="406" fromTop="5" />
+      <File id="CD6AA417-51A1-469B-934E-D1FDD7C6A5B1/d:ViewModelLocator/f:MEFedMVVMResolver.cs" caret="677" fromTop="0" />
+      <File id="CD6AA417-51A1-469B-934E-D1FDD7C6A5B1/d:ViewModelLocator/f:IContainerProvider.cs" caret="128" fromTop="4" />
+      <File id="1909F45C-9C63-40B7-87A9-C68E78E8D501/d:ViewModelLocator/f:DataContextAwareViewModelInitializer.cs/l:..?..?MEFedMVVM?ViewModelLocator?DataContextAwareViewModelInitializer.cs" caret="295" fromTop="12" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:CreateNuGetPackage.bat/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?CreateNuGetPackage.bat" caret="1023" fromTop="9" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.nuspec" caret="699" fromTop="13" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.ValidationExtensions.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.ValidationExtensions.nuspec" caret="654" fromTop="14" />
+      <File id="CD6AA417-51A1-469B-934E-D1FDD7C6A5B1/d:ViewModelLocator/f:IComposer.cs" caret="791" fromTop="19" />
+      <File id="1909F45C-9C63-40B7-87A9-C68E78E8D501/d:ViewModelLocator/f:LocatorBootstrapper.cs" caret="1083" fromTop="13" />
+      <File id="1909F45C-9C63-40B7-87A9-C68E78E8D501/d:ViewModelLocator/f:DefaultComposer.cs" caret="4375" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="D9E10C34-18F5-41B4-94B4-62B68A392B9E/f:DataValidationDelegateCommand.cs/l:..?MEFedMVVM.ValidationsExtensions?DataValidationDelegateCommand.cs" caret="1237" fromTop="33" />
+      <File id="D9E10C34-18F5-41B4-94B4-62B68A392B9E/f:DataValidationDelegateCommand.cs/l:..?MEFedMVVM.ValidationsExtensions?DataValidationDelegateCommand.cs" caret="1151" fromTop="28" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="1479" fromTop="26" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="566" fromTop="6" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="748" fromTop="16" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:MainViewModel.cs" caret="354" fromTop="13" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/f:MediatorMessages.cs" caret="248" fromTop="10" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:MainViewModel.cs" caret="567" fromTop="21" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:MainViewModel.cs" caret="557" fromTop="19" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:UsersViewModel.cs" caret="456" fromTop="6" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:UsersViewModel.cs" caret="1755" fromTop="19" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:UsersViewModel.cs" caret="1608" fromTop="12" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:UsersViewModel.cs" caret="2225" fromTop="33" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="1015" fromTop="8" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="1715" fromTop="31" />
+      <File id="D9E10C34-18F5-41B4-94B4-62B68A392B9E/f:DataValidationBase.cs/l:..?MEFedMVVM.ValidationsExtensions?DataValidationBase.cs" caret="4518" fromTop="27" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:ViewModels/f:AddNewUserViewModel.cs" caret="1228" fromTop="19" />
+      <File id="2A5D94E5-2A58-4DE7-9F52-5794283C01B4/d:Services/d:Models/f:User.cs" caret="1271" fromTop="23" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:AutoStabberBase.cs" caret="1439" fromTop="56" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:AutoStabberBase.cs" caret="202" fromTop="9" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:AutoStabberBase.cs" caret="497" fromTop="15" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:MoqAutoStabber.cs" caret="115" fromTop="4" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:AutoStabberBase.cs" caret="1334" fromTop="23" />
+      <File id="8A225D9A-BAF6-49F1-953E-8D95B2A0B32E/f:MoqAutoStabber.cs" caret="289" fromTop="11" />
+      <File id="1909F45C-9C63-40B7-87A9-C68E78E8D501/d:ViewModelLocator/f:DataContextAwareViewModelInitializer.cs/l:..?..?MEFedMVVM?ViewModelLocator?DataContextAwareViewModelInitializer.cs" caret="729" fromTop="23" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.nuspec" caret="584" fromTop="12" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.nuspec" caret="799" fromTop="14" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.nuspec" caret="154" fromTop="4" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.ValidationExtensions.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.ValidationExtensions.nuspec" caret="906" fromTop="18" />
+      <File id="E3F7A6EB-4122-4FF9-BFD3-7027207EB87A/f:MEFedMVVM.ValidationExtensions.nuspec/l:C!?CodeplexTFS?MEFedMVVM?MEFedMVVMDemo?MEFedMVVM.ValidationExtensions.nuspec" caret="175" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

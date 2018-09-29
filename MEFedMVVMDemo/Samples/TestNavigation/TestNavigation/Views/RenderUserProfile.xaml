@@ -1,0 +1,47 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:mefed="http:\\www.codeplex.com\MEFedMVVM"
+			 xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="TestNavigation.Views.RenderUserProfile"
+			 mefed:ViewModelLocator.NonSharedViewModel="RenderUserProfileViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="361" d:DesignWidth="420">
+    <Grid>
+    	<VisualStateManager.VisualStateGroups>
+    		<VisualStateGroup x:Name="Gender">
+    			<VisualState x:Name="Male"/>
+    			<VisualState x:Name="Female">
+    				<Storyboard>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image">
+    						<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+    					</ObjectAnimationUsingKeyFrames>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image1">
+    						<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+    					</ObjectAnimationUsingKeyFrames>
+    				</Storyboard>
+    			</VisualState>
+    		</VisualStateGroup>
+    	</VisualStateManager.VisualStateGroups>
+    	<Grid.RowDefinitions>
+    		<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+    	<i:Interaction.Behaviors>
+    		<ei:DataStateBehavior Binding="{Binding Profile.Gender}" Value="Male" TrueState="Male" FalseState="Female"/>
+    	</i:Interaction.Behaviors>
+        <Image x:Name="image" Grid.RowSpan="3" Source="/TestNavigation;component/Assets/male-avatar.jpg" Margin="-20,-20,50,50" Opacity="0.8" />
+		<Image x:Name="image1" Grid.RowSpan="3" Source="/TestNavigation;component/Assets/female-avatar.jpg" Margin="-20,-20,50,50" Opacity="0.8" Visibility="Collapsed" />
+		<TextBlock Text="{Binding Profile.Name}" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="32" Margin="50,0,0,0" FontWeight="Bold" FontStyle="Italic" Opacity="0.77" >
+			<TextBlock.Effect>
+				<DropShadowEffect Direction="210" ShadowDepth="37"/>
+			</TextBlock.Effect>
+		</TextBlock>
+		<TextBlock Text="{Binding Profile.Surname}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="100,0,0,0" FontWeight="Bold" FontStyle="Italic" >
+			<TextBlock.Effect>
+				<DropShadowEffect Direction="210" ShadowDepth="79"/>
+			</TextBlock.Effect>
+		</TextBlock>
+    </Grid>
+</UserControl>

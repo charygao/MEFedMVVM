@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EDAAC20-180B-493D-998E-30F2D565F5E4}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MEFedMVVM.SL</RootNamespace>
+    <AssemblyName>MEFedMVVM.SL</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\latest build\Debug\Silverlight\MEFedMVVM.SL\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT; MEFEDSL</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\latest build\Release\Silverlight\MEFedMVVM.SL\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MEFedMVVM.SL.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.Composition, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.Composition.Initialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MEFedMVVM.WPF\ViewModelLocator\LocatorBootstrapper.cs">
+      <Link>ViewModelLocator\LocatorBootstrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM.WPF\ViewModelLocator\ViewModelLocator.cs">
+      <Link>ViewModelLocator\ViewModelLocator.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM.WPF\ViewModelLocator\ViewModelRepoitory.cs">
+      <Link>ViewModelLocator\ViewModelRepoitory.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Common\DelegateCommand.cs">
+      <Link>Common\DelegateCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Common\Designer.cs">
+      <Link>Common\Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Common\NotifyPropertyChangedBase.cs">
+      <Link>Common\NotifyPropertyChangedBase.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Common\PropertyObserver.cs">
+      <Link>Common\PropertyObserver.cs</Link>
+    </Compile>
+    <Compile Include="..\mefedmvvm\services\commonservices\DefaultContainerStatus.cs">
+      <Link>Services\CommonServices\DefaultContainerStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Services\CommonServices\DefaultDispatcherService.cs">
+      <Link>Services\CommonServices\DefaultDispatcherService.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\services\CommonServices\DefaultVisualStateManager.cs">
+      <Link>Services\CommonServices\DefaultVisualStateManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\services\CommonServices\MediatorBase.cs">
+      <Link>Services\CommonServices\MediatorBase.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\services\CommonServices\MediatorMessageSinkAttribute.cs">
+      <Link>Services\CommonServices\MediatorMessageSinkAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\services\CommonServices\MessageToActionMap.cs">
+      <Link>Services\CommonServices\MessageToActionMap.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\services\CommonServices\WeakAction.cs">
+      <Link>Services\CommonServices\WeakAction.cs</Link>
+    </Compile>
+    <Compile Include="..\mefedmvvm\services\contracts\IContainerStatus.cs">
+      <Link>Services\Contracts\IContainerStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\mefedmvvm\services\contracts\IContextAware.cs">
+      <Link>Services\Contracts\IContextAware.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Services\Contracts\IDispatcher.cs">
+      <Link>Services\Contracts\IDispatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\services\Contracts\IMediatorBase.cs">
+      <Link>Services\Contracts\IMediatorBase.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\Services\Contracts\IVisualStateManager.cs">
+      <Link>Services\Contracts\IVisualStateManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\BasicViewModelInitializer.cs">
+      <Link>ViewModelLocator\BasicViewModelInitializer.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\DataContextAwareViewModelInitializer.cs">
+      <Link>ViewModelLocator\DataContextAwareViewModelInitializer.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\ExportService.cs">
+      <Link>ViewModelLocator\ExportService.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\ExportViewModel.cs">
+      <Link>ViewModelLocator\ExportViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\IComposer.cs">
+      <Link>ViewModelLocator\IComposer.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\IContainerProvider.cs">
+      <Link>ViewModelLocator\IContainerProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\IDataContextAware.cs">
+      <Link>ViewModelLocator\IDataContextAware.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\IgnoreAtDesignTimeAttribute.cs">
+      <Link>ViewModelLocator\IgnoreAtDesignTimeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\IMEFedMVVMExportProvider.cs">
+      <Link>ViewModelLocator\IMEFedMVVMExportProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\MEFedMVVMCatalog.cs">
+      <Link>ViewModelLocator\MEFedMVVMCatalog.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\MEFedMVVMExportProvider.cs">
+      <Link>ViewModelLocator\MEFedMVVMExportProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\MEFedMVVM\ViewModelLocator\MEFedMVVMResolver.cs">
+      <Link>ViewModelLocator\MEFedMVVMResolver.cs</Link>
+    </Compile>
+    <Compile Include="Common\WeakEventHandlerManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommonServices\Mediator.cs" />
+    <Compile Include="Services\Contracts\IMediator.cs" />
+    <Compile Include="ViewModelLocator\DefaultComposer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModelLocator\ExportsMetaData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MEFedMVVM.SL.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFedMVVMSample", "MEFedMVVMSample\MEFedMVVMSample.csproj", "{30B88E4B-932D-42DF-B9A6-28A6BC203037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSample", "TestSample\TestSample.csproj", "{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86D4111D-E890-42B7-84D1-5784C61F0BD1}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		MEFedMVVMSample.vsmdi = MEFedMVVMSample.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTesting", "UnitTesting", "{5E395021-015E-45E2-B79A-0AD951413F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFedMVVM.WPF", "..\..\MEFedMVVM.WPF\MEFedMVVM.WPF.csproj", "{1909F45C-9C63-40B7-87A9-C68E78E8D501}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MEFedMVVMSample.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Debug|x86.ActiveCfg = Debug|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Debug|x86.Build.0 = Debug|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Release|Any CPU.ActiveCfg = Release|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Release|Mixed Platforms.Build.0 = Release|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Release|x86.ActiveCfg = Release|x86
+		{30B88E4B-932D-42DF-B9A6-28A6BC203037}.Release|x86.Build.0 = Release|x86
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05}.Release|x86.ActiveCfg = Release|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1909F45C-9C63-40B7-87A9-C68E78E8D501}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A178CE6-6E47-4AD6-BF91-8C9BB1E14E05} = {5E395021-015E-45E2-B79A-0AD951413F6A}
+	EndGlobalSection
+EndGlobal

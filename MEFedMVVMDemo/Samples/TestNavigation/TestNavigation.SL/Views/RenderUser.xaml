@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="TestNavigation.SL.Views.RenderUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mefed="http:\\www.codeplex.com\MEFedMVVM"
+	mefed:ViewModelLocator.NonSharedViewModel="RenderUserProfileViewModel"
+    mc:Ignorable="d"
+    Height="300" Width="400">
+    
+    <Grid x:Name="LayoutRoot">
+		<TextBlock Text="{Binding Profile.Name}" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="32" Margin="50,0,0,0" FontWeight="Bold" FontStyle="Italic" Opacity="0.77" >
+			<TextBlock.Effect>
+				<DropShadowEffect Direction="210" ShadowDepth="37"/>
+			</TextBlock.Effect>
+		</TextBlock>
+		<TextBlock Text="{Binding Profile.Surname}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Margin="100,0,0,0" FontWeight="Bold" FontStyle="Italic" >
+			<TextBlock.Effect>
+				<DropShadowEffect Direction="210" ShadowDepth="79"/>
+			</TextBlock.Effect>
+		</TextBlock>
+    </Grid>
+</UserControl>

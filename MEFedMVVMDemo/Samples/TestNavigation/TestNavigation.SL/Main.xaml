@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="TestNavigation.SL.Main"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" xmlns:mefed="http:\\www.codeplex.com\MEFedMVVM"        
+		mefed:ViewModelLocator.NonSharedViewModel="MainVM">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+
+		<Button Content="Settings" HorizontalAlignment="Right" Margin="5"
+					mefed:NavigationExtensions.NavigateTo="http://myApp/Settings" 
+					mefed:NavigationExtensions.NavigationHost="{Binding ElementName=SettingsContainer}" 
+					mefed:NavigationExtensions.NavigationParameter="{Binding SettingsChangedCommand}"/>
+
+		<ContentControl x:Name="NavigationContainer" Grid.Row="1" />
+		<ContentControl x:Name="SettingsContainer" Grid.Row="1" />
+
+
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+
+			<Button Content="Step 1: Enter user profile" HorizontalAlignment="Center" Name="enterProfile"
+					mefed:NavigationExtensions.NavigateTo="http://myApp/CreateNewUser" 
+					mefed:NavigationExtensions.NavigationHost="{Binding ElementName=NavigationContainer}" />
+
+			<!--
+			This will bind to the Navigation handler of the enterProfile button so that we can chain the navigation call.
+			Basically when you do this you are using the same NavigationHandler thus the INavaigationInfoSubscriber 
+			gets the event of NavigatingAway and can pass data to the next INavaigationInfoSubscriber
+			
+			In this scenario the CreateNewUserViewModel INavaigationInfoSubscriber is passing the user profile 
+			to the RenderUserProfileViewModel
+			-->
+			<Button Content="Step 2: Render user details" Grid.Column="1" HorizontalAlignment="Center" 
+					mefed:NavigationExtensions.NavigateTo="http://myApp/RenderUser"
+					mefed:NavigationExtensions.NavigationHost="{Binding ElementName=NavigationContainer}"
+					mefed:NavigationExtensions.ChainToElement="{Binding ElementName=enterProfile}"/>
+
+		</Grid>
+
+	</Grid>
+</UserControl>

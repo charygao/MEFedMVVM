@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MEFedMVVM.ValidationExtensions</id>
+    <version>1.2</version>
+    <authors>marlongrech</authors>
+    <owners>marlongrech</owners>
+    <licenseUrl>http://mefedmvvm.codeplex.com/license</licenseUrl>
+    <projectUrl>http://mefedmvvm.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Validation extensions for MEF and MVVM.</description>
+    <tags>WPF Silverlight MEF MVVM</tags>
+    <dependencies>
+      <dependency id="MEFedMVVM" version="1.0"/>
+    </dependencies>
+	  <frameworkAssemblies>
+		  <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="net40" />
+		  <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="sl40" />
+	  </frameworkAssemblies>
+  </metadata>
+</package>

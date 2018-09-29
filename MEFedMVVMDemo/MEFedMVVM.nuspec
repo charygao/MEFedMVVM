@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MEFedMVVM</id>
+    <version>1.2</version>
+    <authors>marlongrech</authors>
+    <owners>marlongrech</owners>
+    <licenseUrl>http://mefedmvvm.codeplex.com/license</licenseUrl>
+    <projectUrl>http://mefedmvvm.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library to help to quickly and easily create applications using MEF and MVVM.</description>
+    <tags>WPF Silverlight MEF MVVM</tags>
+	  <frameworkAssemblies>
+		  <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="net40" />
+		  <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="sl40" />
+	  </frameworkAssemblies>
+  </metadata>
+</package>
